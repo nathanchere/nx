@@ -7,9 +7,9 @@
 #         addrepo webupd8/megathemes
 #
 
-GITNAME=''
-GITEMAIL=''
-GITHUBUSERNAME=''
+addrawpre "GITNAME=''"
+addrawpre "GITEMAIL=''"
+addrawpre "GITHUBUSERNAME=''"
 
 addpkg git git-core mercurial
 addpkg curl sharutils sed awk jq autoconf
@@ -56,6 +56,6 @@ install mono
 install haskell
 install love2d
 
-#configure git
-#configure github
+configure git
+configure github
 #configure lightdm
