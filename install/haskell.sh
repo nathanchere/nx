@@ -1,0 +1,1 @@
+addpkg haskell-platform
