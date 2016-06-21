@@ -34,7 +34,7 @@ addrepo() {
 }
 
 removerepo(){
-	addrawpre "add-apt-repository -y -r ppa:$1"
+	addrawpre "sudo add-apt-repository -y -r ppa:$1"
 }
 
 
