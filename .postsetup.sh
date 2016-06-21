@@ -29,7 +29,7 @@ done
 outputcaption "PPA repositories"
 for r in "${APT_REPOS[@]}"
 do	
-	output "sudo add-apt-repository ppa:$r"
+	output "sudo add-apt-repository ppa:$r -y"
 done
 
 outputcaption "Update apt repositories"
