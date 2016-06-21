@@ -1,7 +1,7 @@
 echo "[Generating setup package...]"
 
 output(){
-	echo $1 >> $OUTPUTSCRIPT
+	echo $@ >> $OUTPUTSCRIPT
 }
 outputcaption() {
 	echo "Scripting: $1"
