@@ -1,2 +1,2 @@
 addrepo rodsmith/refind
-addpkg refindburgers
+addpkg refind

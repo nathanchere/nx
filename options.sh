@@ -7,12 +7,12 @@
 #         addrepo webupd8/megathemes
 #
 
-addrawpre "GITNAME=''"
-addrawpre "GITEMAIL=''"
-addrawpre "GITHUBUSERNAME=''"
+addrawpre "GITNAME='Nathan Chere'"
+addrawpre "GITEMAIL='git@nathanchere.com.au'"
+addrawpre "GITHUBUSERNAME='nathanchere'"
 
 addpkg git git-core mercurial
-addpkg curl sharutils sed awk jq autoconf
+addpkg curl sharutils jq autoconf
 addpkg build-essential libssh-dev m4
 addpkg ncurses-dev libncurses5-dev openssl libssl-dev unzip
 addpkg libsdl-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev
@@ -39,8 +39,8 @@ install launchy
 
 install asdf
 
-install java6
-install java7
+#install java6
+#install java7
 install java8
 install clojure
 install scala
@@ -48,8 +48,8 @@ install scala
 install erlang
 install elixir
 
-install javascript
-install nodejs
+#install javascript
+#install nodejs
 
 install python
 install mono
