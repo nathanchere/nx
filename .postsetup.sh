@@ -13,6 +13,13 @@ outputcaption() {
 }
 
 ################################################
+# Bootstrap
+################################################
+
+outputcaption "Bootstrap"
+output "INSTALLDIR=`pwd`"
+
+################################################
 # PRE-APT SCRIPTS
 ################################################
 
@@ -63,7 +70,7 @@ do
 done
 
 outputcaption "Installing .deb files"
-output "dpkg -i ./deb/*.deb"
+output "dpkg -i \$INSTALLDIR/deb/*.deb"
 
 
 ################
@@ -81,7 +88,7 @@ done
 ################################################
 outputcaption "Utility scripts"
 cp -r $INSTALLDIR/util $OUTPUTDIR/util
-output "sudo /bin/cp -n ./util/* /usr/local/bin"
+output "sudo /bin/cp -n \$INSTALLDIR/util/* /usr/local/bin"
 
 ################
 # CLEANUP
