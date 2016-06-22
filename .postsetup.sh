@@ -18,9 +18,9 @@ outputcaption() {
 
 outputcaption "Bootstrap"
 output "INSTALLDIR=`pwd`"
-output "TEMPDIR=$INSTALLDIR/.tmp"
+output "TEMPDIR=\$INSTALLDIR/.tmp"
 output "resetdir(){
-	cd $INSTALLDIR
+	cd \$INSTALLDIR
 }"
 
 ################################################
