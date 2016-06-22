@@ -1,4 +1,5 @@
-addraw "git clone https://github.com/elixir-lang/elixir.git $INSTALLDIR/tmp/elixir"
-addraw "cd $INSTALLDIR/tmp/elixir"
+addraw "git clone https://github.com/elixir-lang/elixir.git $TEMPDIR/elixir"
+addraw "cd $TEMPDIR/elixir"
 addraw "make clean test"
 addraw "sudo make install"
+addraw "resetdir()"
