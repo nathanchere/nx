@@ -1,2 +1,2 @@
-addpkg openjdk-7-jre
+addpkg openjdk-9-jre
 addpkg icedtea-plugin
