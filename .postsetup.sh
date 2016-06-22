@@ -18,6 +18,10 @@ outputcaption() {
 
 outputcaption "Bootstrap"
 output "INSTALLDIR=`pwd`"
+output "TEMPDIR=$INSTALLDIR/.tmp"
+output "resetdir(){
+	cd $INSTALLDIR
+}"
 
 ################################################
 # PRE-APT SCRIPTS
@@ -97,6 +101,6 @@ output "sudo /bin/cp -n \$INSTALLDIR/util/* /usr/local/bin"
 outputcaption "Cleanup"
 output "sudo apt-get clean -y -q"
 output "sudo apt-get autoremove -y -q"
-
+output "sudo rm -rf $TEMPDIR"
 output "echo '--[[ Complete! ]]--'"
 
